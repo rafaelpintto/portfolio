@@ -51,14 +51,14 @@ document.querySelectorAll("#close-menu").forEach(function(element) {
 
 //animação typed
 var typed = new Typed(".typing", {
-    strings: ["Analista de Dados", "Engenheiro de Produção"],
+    strings: ["Analista de Dados"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 })
 
 var typed = new Typed(".typing-2", {
-    strings: ["Analista de Dados", "Engenheiro de Produção"],
+    strings: ["Analista de Dados"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
