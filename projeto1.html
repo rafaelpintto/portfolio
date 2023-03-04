@@ -5,434 +5,322 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Projeto 1</title>
+    <title>Portfólio Pessoal</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/keyframes.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
-    <div class="back">
-        <a href="index.html"><i class="fa fa-arrow-left"></i></a>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-    
-    <!-- relatório -->
-    <section class="report" id="report">
+    <div class="scroll-up-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5517981194247&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+
+    <!--menu início-->
+    <nav class="navbar">
         <div class="max-width">
-            <h2 class="title">Relatório</h2>
-            <div class="report-content">
-                <div class="column center">
-                    
+            <div class="logo"><a href="#">Portfó<span>lio.</span></a></div>
+            <ul class="menu">
+                <li id="menu-1" class="menu-item"><a id="close-menu" class="menu-link" href="#home">Início</a></li>
+                <li id="menu-2" class="menu-item"><a id="close-menu" class="menu-link" href="#about">Sobre</a></li>
+                <li id="menu-3" class="menu-item"><a id="close-menu" class="menu-link" href="#skills">Habilidades</a></li>
+                <li id="menu-4" class="menu-item"><a id="close-menu" class="menu-link" href="#works">Projetos</a></li>
+                <li id="menu-5" class="menu-item"><a id="close-menu" class="menu-link" href="#works">Mídia</a></li>
+                <li id="menu-6" class="menu-item"><a id="close-menu" class="menu-link" href="#contact">Contato</a></li>
+            </ul>
+            <div class="social-media">
+                <a id="social-1" href="https://github.com/rafaelpintto" target="_blank"><i class="fa fa-github"></i></a>
+                <a id="social-2" href="https://www.linkedin.com/in/rafaelpintto/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div id="close-menu" class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            <!--<span>Fechar</span>-->
+            </div>
+        </div>
+    </nav>
+
+    <!--home início-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="banner">
+                <img src="media/banner.png" alt="">
+            </div>
+            <div class="home-content">
+                <div class="text-1">Olá, meu nome é</div>
+                <div class="text-2">Rafael Pinto</div>
+                <div class="text-3">E eu sou <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!--sobre início-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="column left" data-anime="left">
+                    <img src="media/profile-1.jpg" alt="foto de Rafael Pinto">
+                </div>
+                <div class="column right" data-anime="up">
+                    <div class="text">Eu sou o Rafael e eu sou <span class="typing-2"></span></div>
+                    <p>Sou natural de São José do Rio Preto-SP e me formei em Administrador de Banco de Dados - SENAI. Atualmente cursando Escola da Análise de Dados. Experiências na área da saúde e esporte de alto rendimento, realizando controle de treinamentos, avaliações, logística e gestão de atletas. Ferramentas como Power BI, Python e SQL para gerar insights para comissão técnica e diretoria a mais de 2 anos. Transformando números em informações para tomada de decisões. Estas experiências me habilitaram para gerir equipes, processos e projetos. Desde então venho estudando não só essas ferramentas como o conceito de Business Intelligence e seus processos, adquirindo cursos e livros, além de colocar a mão na massa codando, analisando dados e produzindo painéis.</p>
+                    <a href="media/Curriculo_SIMP.pdf" target="_blank">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--habilidades início-->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Habilidades</h2>
+            <div class="skills-content">
+                
+                <div class="card" data-anime="left">
                     <div class="box">
-                        <iframe title="Dash Vendas" width="800" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiOWVlM2MwZDctZjhiYi00ODlhLWJiNzgtOWRiZWEzNzE4MTY0IiwidCI6IjY4NDBkMGMzLWFjYzMtNGJkMi1iYWFhLTMxNjNhNTU3NzdlNCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                        <i class="ms-Icon ms-Icon--PowerBILogo"></i>
+                        <h3>PowerBI</h3>
+                        <p>ETL (PowerQuery), Modelagem (Star Schema), Análises estatíticas (DAX e gráficos) e Visualização de dados com Storytelling.</p>
                     </div>
-                    <br>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOWVlM2MwZDctZjhiYi00ODlhLWJiNzgtOWRiZWEzNzE4MTY0IiwidCI6IjY4NDBkMGMzLWFjYzMtNGJkMi1iYWFhLTMxNjNhNTU3NzdlNCJ9"><p>Link do Relatório</p></a>
-                    <br>
-                    <p class="desc">No Power BI, para explorar as potencialidades da ferramenta, foram utilizados recursos como tooltip, drill down, parâmetros, drill through e bookmarks, além de seus filtros e visuais nativos.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- objetivo -->
-    <section class="objective" id="objective">
-        <div class="max-width">
-            <h2 class="title">Requisitos</h2>
-            <div class="objective-content">
-
-                <div class="column left">
-                    <div class="text">Perguntas respondidas </div>
-                    <ul>
-                        <p>Página 1</p>
-                        <li>Faturamento total e percentual da meta imposta que foi atingida pela empresa (anos   e meses em que a meta foi batida).</li>
-                        <li>Variedade de itens vendidos em comparação a anos anteriores.</li>
-                        <li>Quantidade de compradores em comparação a anos anteriores.</li>
-                        <li>Contribuição da categoria e subcategoria de produtos em relação ao Faturamento.</li>
-                        <li>Faturamento e meta e percentual de atingimento de meta dos Representantes.</li>
-                        <li>Top 3 Representantes por mês.</li>
-                        <br> 
-                        <p>Página 2</p>   
-                        <li>Faturamento em relação a ano e mês anteriores.</li>
-                        <li>Nº de vendas realizadas em relação a ano e mês anteriores.</li>
-                        <li>Ticket Médio de vendas.</li>
-                        <li>Meses em que o volume de vendas fica acima ou abaixo da média.</li>
-                        <li>Produtos que mais impactam no Faturamento (utilizando o principio de Pareto).</li>
-                        <li>Top N produtos mais vendidos.</li>
-                        <br>
-                        <p>Página 3</p>
-                        <li>Nº de Novos Clientes e clientes antigos no mês/ano.</li>
-                        <li>Ticket Médio de Clientes.</li>
-                        <li>Lifetime Value.</li>
-                        <li>Ramo atividade que mais impacta no Faturamento e seu número de clientes.</li>
-                        <li>Top 3 clientes que geram mais Faturamento. E quem são eles.</li>
-                        <li>Faturamento e nº de Clientes por Estado e Cidade.</li>
-                    </ul>
+                
+                <div class="card" data-anime="right">
+                    <div class="box">
+                        <i class="ms-Icon ms-Icon--ExcelLogo"></i>
+                        <h3>Excel</h3>
+                        <p>Análises, principalmente exploratórias, usando funções (pesquisa, matemática, estatísica, etc.), tabela dinâmica e gráficos.</p>
+                    </div>
+                </div>
+                
+                <div class="card" data-anime="right">
+                    <div class="box">
+                        <i class="fa fa-python"></i>
+                        <h3>Python</h3>
+                        <p>Fundamentos de Python. Evoluindo no estudo de Pandas e PySpark para Análise de Dados.</p>
+                    </div>
+                </div>
+                
+                <div class="card" data-anime="left">
+                    <div class="box">
+                        <i class="fa fa-jupyter"></i>
+                        <h3>Jupyter</h3>
+                        <p>Notebooks para documentação de códigos que podem ser lidos com serviços em nuvem, como o próprio Jupyter ou Google Colab.</p>
+                    </div>
+                </div>
+                
+                <div class="card" data-anime="right">
+                    <div class="box">
+                        <i class="fa fa-github"></i>
+                        <h3>Git e GitHub</h3>
+                        <p>Versionameto de códigos utilizando repositórios armazenados em máquinas e na nuvem.</p>
+                    </div>
                 </div>
 
-                <div class="column right">
-                    <div class="text">Definições da área</div>
-                    <ul>
-                        <li>Clientes recorrentes:</li>
-                        <p>Clientes que compraram no período corrente (mês ou ano) e no período anterior.</p>
-                        <br>
-                        <li>Lifetime Médio:</li><p> Tempo de retenção, ou seja, tempo médio que os clientes mantêm ativo o relacionamento com a empresa.</p>
-                        <br>
-                        <p>
-                            <math>
-                                <mi>Lifetime Médio</mi><mo>=</mo>
-                                <mfrac>
-                                    <mrow><mn>Soma dos tempos entre s primeira e última compras de cada cliente</mn></mrow>
-                                    <mn>Número de clientes que compraram no mês corrente</mn>
-                                </mfrac>
-                            </math>
-                        </p>
-                        <br>
-                        <li>Ticket Médio (com base no número de clientes):</li>
-                        <br>
-                        <p>
-                            <math>
-                                <mi>TMc</mi><mo>=</mo>
-                                <mfrac>
-                                    <mrow><mn>Faturamento</mn></mrow>
-                                    <mn>Número de clientes que compraram no período</mn>
-                                </mfrac>
-                            </math>
-                        </p>
-                        <br>
-                        <li>Ticket Médio (com base no número de vendas):</li>
-                        <br>
-                        <p>
-                            <math>
-                                <mi>TMv</mi><mo>=</mo>
-                                <mfrac>
-                                    <mrow><mn>Faturamento</mn></mrow>
-                                    <mn>Número de vendas realizadas no período</mn>
-                                </mfrac>
-                            </math>
-                        </p>
-                    </ul>
+                <div class="imgcentral">
+                    <i class="fa-solid fa-laptop-code"></i>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Análises -->
-    <section class="analysis" id="analisys">
+    <!--projetos início-->
+    <section class="works" id="works">
         <div class="max-width">
-            <h2 class="title">Análise de Dados</h2>
-            <div class="analysis-content">
+            <h2 class="title">Projetos</h2>
+            <div class="works-content">
 
-                <div class="column center">
-                    <div class="text">Extraindo informações</div>
-                    <p>Foi feita uma <span>análise exploratória</span>, com visuais de gráficos e expressões DAX, para conhecer os dados. Porém as informações extraídas devem ser relevantes para o contexto (projeto). Desta forma, o que está exposto aqui são algumas expressões da <span>análise explanatória</span>.</p>
-                </div>
+                <h3 class="subtitle">últimos</h3>
+                <ul class="last owl-carousel" data-anime="up">
+                    <li class="card">
+                        <div class="box">
+                            <img src="media/works/work1.jpg" alt="painel">
+                            <div class="info-card">
+                                <h3>Painel de Sports</h3>
+                                <P>Dessenvolvido em Power BI.</P>
+                                <a href="projeto1.html">
+                                    <span>Saiba mais</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <h3 class="subtitle">por área</h3>
+                <ul class="filter" data-anime="right">
+                    <li class="category active" data-filter="all">Todos</li>
+                    <li class="category" data-filter="vendas">Sports</li>
+                    <li class="category" data-filter="producao">Produção</li>
+                    <li class="category" data-filter="rh">Vendas</li>
+                    <li class="category" data-filter="rh">Mídia</li>
+                    <li class="category" data-filter="logistica">Logística</li>
+                </ul>
 
-                <div class="column left">
-                    <p>Medida do Faturamento:</p>
-                    <pre>
-Faturamento = 
-SUMX(
-    fNotas,
-    fNotas[Quantidade] * fNotas[Preço unitário]
-)
-                    </pre>
-                    <p>Medida do Faturamento <span>YoY</span> (Year-over-Year), no qual ao filtrar um ano, ele é comparado com ano anterior, e ao filtrar mais de um ano, a comparação é feita entre os dois últimos anos selecionados no filtro:</p>
-                    <pre>
-Faturamento YoY = 
-// ano do contexto
-VAR vAno_maximo = MAX(dCalendario[Ano])
-// ano anterior de acordo com o filtro
-VAR vAno_anterior = 
-IF(
-    COUNTROWS(VALUES(dCalendario[Ano])) > 1,
-        CALCULATE(
-            MAX(dCalendario[Ano]),
-            FILTER(
-                VALUES(dCalendario[Ano]),
-                dCalendario[Ano] < vAno_maximo
-            )
-        ),
-        vAno_maximo - 1
-)
-//Menor ano
-VAR vMenor_ano = CALCULATE(MIN(dCalendario[Ano]), ALL(dCalendario[Ano]))
-//Faturamento no contexto
-VAR vValor_ultimo_ano = 
-CALCULATE(
-    [Faturamento],
-    dCalendario[Ano] = vAno_maximo
-)
-//Faturamento no ano anterior
-VAR vValor_ano_anterior = 
-CALCULATE(
-    [Faturamento],
-    dCalendario[Ano] = vAno_anterior
-)
-//Mostrar YoY se o ano não for o menor
-VAR vResultado = 
-IF(
-    vAno_anterior >= vMenor_ano, 
-        DIVIDE(
-            vValor_ultimo_ano - vValor_ano_anterior,
-            vValor_ano_anterior
-        ),
-        "-"
-)
-RETURN
-vResultado
-                    </pre>
-                    <p>Medida do Faturamento <span>MoM</span> (Month-over-Month), no qual ao filtrar um mês, ele é comparado com mês anterior, e ao filtrar mais de um mês, a comparação é feita entre os dois últimos meses selecionados no filtro:</p>
-                    <pre>
-MoM Faturamento = 
-//Encontrar último ano do contexto:
-VAR vAno_maximo = MAX('dCalendario'[Ano])
-//Encontrar último mês do contexto:
-var vUltimo_mes = MAX('dCalendario'[Mês])
-//Calcular Faturamento no último mês do contexto:
-var vValor_mes_contexto = 
-CALCULATE(
-    [Faturamento],
-    dCalendario[Mês] = vUltimo_mes,
-    dCalendario[Ano] = vAno_maximo
-)
-//Calcular Faturamento no mês anterior:
-var vValor_mes_anterior =
-SWITCH(
-    TRUE(),
-    COUNTROWS(VALUES('dCalendario'[Ano])) = 1 && COUNTROWS(VALUES('dCalendario'[Mês])) = 1,
-        CALCULATE(
-            [Faturamento],
-            PARALLELPERIOD(dCalendario[Data], -1, MONTH)
-        ),
-    COUNTROWS(VALUES('dCalendario'[Ano])) = 1 && COUNTROWS(VALUES('dCalendario'[Mês])) > 1,
-        CALCULATE(
-            [Faturamento],
-            FILTER(
-                VALUES(dCalendario[Mês]),
-                dCalendario[Mês] < vUltimo_mes
-            )
-        ),
-    CALCULATE(
-        [Faturamento],
-        FILTER(
-            VALUES(dCalendario[Ano]),
-            dCalendario[Ano] < vAno_maximo
-        ),
-        FILTER(
-            VALUES(dCalendario[Mês]),
-            dCalendario[Mês] = vUltimo_mes
-        )
-    )
-)
-//Mostrar resultado se houver ano e mês filtrados
-VAR vResultado =
-IF(
-    COUNTROWS(VALUES(dCalendario[Ano])) < COUNTROWS(ALL(dCalendario[Ano])) &&
-    COUNTROWS(VALUES(dCalendario[Mês])) < COUNTROWS(ALL(dCalendario[Mês])),
-        DIVIDE(
-            vValor_mes_contexto - vValor_mes_anterior,
-            vValor_mes_anterior
-        ),
-        "-"
-)
-RETURN
-vResultado
-                    </pre>
-                    <p>Medida do número de vendas (número de Notas Fiscais):</p>
-                    <pre>NF = DISTINCTCOUNT(fNotas[NF])
-                    </pre>
-                    <p>Medida do <span>Ticket Médio</span> (com base no número de Vendas):</p>
-                    <pre>TMv = DIVIDE([Faturamento], [NF])
-                    </pre>
-                    <p>Medida para calcular o Faturamento percentual acumulado por produto (utilizado no <span>gráfico de Pareto</span>):</p>
-                    <pre>
-Pareto = 
-//Retirar o contexto de filtro de produto
-VAR vTotal_fat = 
-CALCULATE(
-    [Faturamento],
-    ALLSELECTED(dProdutos[Produto])
-)
-//Faturamento total de cada produto
-VAR vTot_atual = [Faturamento]
-//Tabela de vendas agrupada por produto e seu faturamento
-VAR vTabela =
-SUMMARIZE(
-    ALLSELECTED(fNotas),
-    dProdutos[Produto],
-    "Total", [Faturamento]
-)
-// Acumular valores da tabela
-VAR vTotal_acum =
-SUMX(
-    FILTER(
-        vTabela,
-        [Total] >= vTot_atual
-    ),
-    [Total]
-)
-RETURN
-//percentual acumulado
-DIVIDE(vTotal_acum, vTotal_fat)
-                    </pre>
-                        
-                </div>                              
-                <div class="column right">
-                    <p>Medida para calcular os N Produtos mais vendidos</p>
-                    <pre>
-Top Produtos mais vendidos = 
-//Ranquear produtos pelo faturamento
-VAR vRanking =
-RANKX(
-    ALL(dProdutos[Produto]),
-    [Qtd Produtos vendidos]
-)
-// Mostrar somente os N primeiros produtos
-VAR vResultado = 
-IF(
-    vRanking <= [Top N Produtos Valor],
-        [Qtd Produtos vendidos]
-)
-RETURN
-vResultado 
-                    </pre>
-                    <p>Medida dos Clientes que já realizaram ao menos uma compras:</p>
-                    <pre>Qtd Clientes = DISTINCTCOUNT(fNotas[IDCliente])
-                    </pre>
-                    <p>Medida do <span>Ticket Médio</span> (com base no número de Clientes):</p>
-                    <pre>TMc = DIVIDE([Faturamento], DISTINCTCOUNT(fNotas[IDCliente]))
-                    </pre>
-                    <p>Medida de <span>Novos Clientes</span>:</p>
-                    <pre>
-Novos Clientes = 
-//Tabela de clientes que já efetuaram compras
-VAR vClientes_contexto = VALUES(fNotas[IDCliente])
--- Para mês
-VAR vData_limite =
-EOMONTH(
-    MAX(dCalendario[Data]),
-    -1
-)
-//Tabela de clientes que fizeram compras até o mês anterior
-VAR vClientes_antigos = 
-CALCULATETABLE(
-    VALUES(fNotas[IDCliente]),
-    dCalendario[Data] <= vData_limite
-)
-//Tabela de novos clientes no mês atual
-VAR vTb_novos_clientes =
-EXCEPT(
-    vClientes_contexto,
-    vClientes_antigos
-)
-//Quantidade de novos clientes no mês
-VAR vNovos_clientes = COUNTROWS(vTb_novos_clientes)
--- Para o ano:
-VAR vAno_contexto = MAX(dCalendario[Ano])
-//Tabela de clientes que fizeram compras no ano anterior
-VAR vClientes_anos_anteriores = 
-CALCULATETABLE(
-    VALUES(fNotas[IDCliente]),
-    dCalendario[Ano] < vAno_contexto
-)
-//Tabela de novos clientes no ano atual
-VAR vTb_novos_clientes_ano =
-EXCEPT(
-    vClientes_contexto,
-    vClientes_anos_anteriores
-)
-//Quantidade de novos clientes no ano
-VAR vNovos_clientes_ano = COUNTROWS(vTb_novos_clientes_ano)
-//Resultado conforme o contexto
-VAR vResultado =
-
-IF(
-    ISINSCOPE(dCalendario[Mês Abrev]),
-    vNovos_clientes,
-    vNovos_clientes_ano
-)
-RETURN
-vResultado
-                    </pre>
-                    <p>Medida de <span>Clientes Recorrentes</span>:</p>
-                    <pre>Clientes Recorrentes = [Qtd Clientes] - [Novos Clientes]
-                    </pre>
-                    <p>Medida do Lifetime de cada Cliente:</p>
-                    <pre>
-Lifetime = 
-VAR vData_contexto = MAX(dCalendario[Data])
-//Data da primeira compra de cada cliente 
-VAR vData_1a_compra = 
-CALCULATE(
-    MIN(fNotas[Data emissao]),
-    ALL(dCalendario)
-)
-//Tempo em qua cada comprador do mês atual é cliente:
-VAR vTempo_cliente = 
-IF(
-    [Faturamento],
-    DATEDIFF(vData_1a_compra, vData_contexto, MONTH) +1
-)
-RETURN
-vTempo_cliente
-                    </pre>
-                    <p>Medida do <span>Lifetime Médio</span>:</p>
-                    <pre>
-Lifetime Medio = 
-AVERAGEX(
-    VALUES(fNotas[IDCliente]),
-    [Lifetime]
-)
-                    </pre>
-                    <p>Medida para calcular os 3 clientes que geram maior faturamento:</p>
-                    <pre>
-Top 3 Clientes = 
-//Ranquear clientes pelo Faturamento
-VAR vRanking_clientes =
-RANKX(
-    ALL(dClientes[Nome cliente]),
-    [Faturamento]
-)
-//Mostrar apenas os 3 primeiros
-VAR vResultado =
-IF(
-    vRanking_clientes <= 3,
-    [Faturamento]
-)
-RETURN
-vResultado
-
-                    </pre>
-                </div>
+                <ul class="itens" data-anime="up">
+                    <li class="card vendas">
+                        <div class="box">
+                            <img src="media/works/work1.jpg" alt="painel">
+                            <div class="info-card">
+                                <h3>Painel de Sports</h3>
+                                <P>Dessenvolvido em Power BI.</P>
+                                <a href="projeto1.html">
+                                    <span>Saiba mais</span>
+                                </a>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card vendas">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card producao">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card logistica">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card rh">
+                        <div class="box">
+                            <img src="media/works/work2.jpg" alt="">
+                            <div class="info-card">
+                                <h3>Título</h3>
+                                <P>Descrição.</P>
+                                <span>Saiba mais</span>     
+                            </div>
+                        </div>
+                    </li>            
+                </ul>
 
             </div>
         </div>
-            </div>
-                 
-        </section>
-    <!-- ETL e Modelagem -->
-    <section class="modeling" id="modeling">
+    </section>
+
+    <!--contato início-->
+    <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">ETL e Modelagem</h2>
-            <div class="modeling-content">
-  
-                <div class="column left">
-                    <div class="text">Relacionamento entre as tabelas</div>
-                    <p>O processo de <span>ETL</span> deste projeto foi feito inteiramente em <span>Power Query</span>. Após extrair, limpar e transformar os dados, foram criadas tabelas de fatos e dimensões. E também foi criada, em linguagem M, uma tabela <span>dimensão calendário</span>, que possibilita centralizar as datas, permitindo melhor consistência nas análises ao trabalhar com funções de inteligência de tempo.</p>
-                    <p>A modelagem foi feita usando o <span>esquema estrela</span> (ver figura ao lado), no qual a <span>tabela fato</span>, quem contém os valores, pode ser filtrada pelas <span>tabelas dimensão</span>, que trazem os contextos.</p>
-                    <br>
-                    <p>É possível notar que tabela fato só se relaciona com tabela dimensão e vice-versa. O relacionamento entre as tabelas é de um para muitos (1:*), com o filtro sempre indo da dimensão para a fato.</p>
-                    Neste projeto não temos tabela ponte (fato sem fato) nem diferença de granularidade que poderia gerar relacionamento muitos para muitos (*:*).
+            <h2 class="title">Contato</h2>
+            <div class="contact-content">
+                <div class="column left" data-anime="left">
+                    <div class="text">Entre em contato</div>
+                    <p>Se interessou? Por favor, entre em contato para mais informações e também para saber se as informações aqui contidas estão atualizadas.</p>  
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">Rafael Pinto</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Endereço</div>
+                                <div class="sub-title">São José do Rio Preto - SP, Brasil</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">rafaelpintto@gmail.com</div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-
-                <div class="column right">
-                    <img src="https://uploaddeimagens.com.br/images/004/368/847/original/modelo.jpg" alt="star schema">
+                <div class="column right" data-anime="up">
+                    <div class="text">Mensagem</div>
+                    <form action="https://formsubmit.co/rafaelpintto@gmail.com" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Nome" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="_subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+                        </div>
+                        <div class="button">
+                                <button type="submit" onclick="message()">Enviar mensagem</button>
+                        </div>
+                        <div class="thanks">
+                            <input type="hidden" name="_next" value="https://rafaelpintto.github.io/portfolio/thanks.html">
+                        </div>
+                    </form>
                 </div>
-
             </div>
         </div>
-
-
     </section>
 
     <!--rodapé início-->
@@ -440,15 +328,6 @@ vResultado
         <span>Criado por <a href="https://github.com/rafaelpintto" target="_blank">Rafael Pinto</a> | <span class="far fa-copyright"></span> 2023 Todos os direitos reservados.</span>
     </footer>
 
-</body>
-</html>
-
-    </section>
-
-    <!--rodapé início-->
-    <footer>
-        <span>Criado por <a href="https://github.com/rafaelpintto" target="_blank">Rafael Pinto</a> | <span class="far fa-copyright"></span> 2023 Todos os direitos reservados.</span>
-    </footer>
-
+    <script src="assets/script.js"></script>
 </body>
 </html>
